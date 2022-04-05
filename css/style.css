@@ -1,0 +1,5 @@
+/* Se importan los distintos archivos css dependiendo de lo que se está diseñando. */
+@import url("base.css");
+@import url("navbar.css");
+@import url("main-content.css");
+@import url("footer.css");

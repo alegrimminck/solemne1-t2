@@ -1,0 +1,30 @@
+/* Aquí se encuentra el código principal que afectará a la etiquetas principales y a los elementos en general, como inicializar el margen y el padding en 0. */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html { height: 100%;}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: lightcyan;
+    text-decoration: none;
+}
+
+table h1 {
+    color: #67de00;
+    text-shadow: 0px 1px 1px black;
+}

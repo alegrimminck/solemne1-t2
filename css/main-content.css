@@ -1,0 +1,117 @@
+/* Envoltorio de la sección principal para poner una imagen de BG */
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background-color: black;
+}
+
+/* Para añadirle opacidad a el background se tiene que usar el "::before" en el wrapper y aquí bajar la opacidad, 
+ya que no existe el atributo de opacidad para el BG */
+.wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("/img/bg_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    opacity: 0.5;
+}
+
+/* Sombra verde arriba del contenido principal */
+.shadow {
+    position: relative;
+    height: 100%;
+    box-shadow: inset 0 10px 5px -7px #52B000;
+}
+
+/* Configuración del título */
+.title {
+    text-align: left;
+    font-size: 40px;
+    padding: 0 100px;
+}
+
+/*------------------- Etiqueta "section"------------------- */
+
+.section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 90px;
+}
+
+.section-img {
+    object-fit:contain ;
+}
+
+.section a:hover {
+    color: #67de00;
+}
+
+.section p {
+    margin: 15px 0;
+}
+
+.section img{
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.section img:hover {
+    transform:scale(1.05);
+}
+
+.section a {
+    width: 100%;
+}
+
+/*------------------- Sección tablas------------------- */
+
+/* Centra las tablas */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.section-table {
+    margin-top: 20px;
+    border: "2px";
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+table h2 {
+    font-size: 16px;
+}
+
+/*------------------- Sección artículo ------------------- */
+
+.article {
+    display: flex;
+    flex-direction: row;
+    margin: 10% 10%;
+}
+
+.article-wrapper {
+    width: 100%;
+    padding: 50px;
+}
+
+.article h2 {
+    margin-bottom: 30px;
+}
+
+.article img {
+    padding: 20px;
+    align-self: center;
+    border-radius: 8px;
+    max-width: 100%;
+    height: 400px;
+}
